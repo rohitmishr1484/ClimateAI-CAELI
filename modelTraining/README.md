@@ -2,7 +2,7 @@
 
 1. **EDA Notebook**
 
-This notebook contains basic exploratory analysis peformed. Although the path used in this notebook is relative but its expects a specific folder structure for image and metadata. Kindly change it as per your need. 
+This notebook contains basic exploratory analysis performed. Although the path used in this notebook is relative but its expects a specific folder structure for image and meta-data. Kindly change it as per your need. 
 
 2. **CNN Notebook**
 
@@ -12,15 +12,15 @@ I wanted to train a very basic model to understand the worst case performance of
 
 ![alt text][logo]
 
-[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/model-architecture.PNG?raw=true "Architecture"
+[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/model-architecture.png?raw=true "Architecture"
 
 Loss and accuracy plot wrt epoch shows the inferior performance of the model
 
 ![alt text][logo]
 
-[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/loss.PNG?raw=true "Loss"
+[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/loss.png?raw=true "Loss"
 
 
 ![alt text][logo]
 
-[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/accuracy.PNG?raw=true "Accuracy"
+[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/accuracy.png?raw=true "Accuracy"
