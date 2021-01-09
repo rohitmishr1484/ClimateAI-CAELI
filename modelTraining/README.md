@@ -16,11 +16,11 @@ I wanted to train a very basic model to understand the worst case performance of
 
 Loss and accuracy plot wrt epoch shows the inferior performance of the model
 
-![alt text][logo]
+![alt text][logo1]
 
-[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/loss.png?raw=true "Loss"
+[logo1]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/loss.png?raw=true "Loss"
 
 
-![alt text][logo]
+![alt text][logo2]
 
-[logo]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/accuracy.png?raw=true "Accuracy"
+[logo2]: https://github.com/rohitmishr1484/ClimateAI-CAELI/blob/main/modelTraining/accuracy.png?raw=true "Accuracy"
