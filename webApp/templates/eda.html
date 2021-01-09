@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>EDA</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/images/fevicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/images/fevicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/images/fevicon/favicon-16x16.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="{{url_for('index_html')}}"><img src="../static/images/logo.png" width="50" height="45"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="{{url_for('index_html')}}">Home</a></li>
+					<li><a href="{{url_for('about_html')}}">About</a></li>
+					<li><a href="{{url_for('usecase_html')}}">Usecase</a></li>
+					<li><a href="{{url_for('eda_html')}}">EDA</a></li>
+					<li><a href="{{url_for('demo_html')}}">Demo</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Exploratory Data Analysis</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h3><strong>Class Distribution</strong></h3>
+						</header>
+						<p>The first step towards EDA is to check the distribution of various class in order to examine whether the dataset is suffering from imbalance or not? Based on the class distribution plot we can see clear imbalance with No-Anomaly being the majority class. This gives a clear indication that accuracy is not a good metric for evaluation instead we can choose class-wise accuracy or F1-score for model performance calculation.</p>
+					
+						<div>
+							<a href="https://plotly.com/~rohitmishra/1/?share_key=vy6VM61N4NXWBOQ91siqyO" target="_blank" title="class_distribution" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/1.png?share_key=vy6VM61N4NXWBOQ91siqyO" alt="class_distribution" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:1" sharekey-plotly="vy6VM61N4NXWBOQ91siqyO" src="https://plotly.com/embed.js" async></script>
+						</div>
+
+						
+						<header>
+							<h3>  </h3>
+						</header>
+						<header>
+							<h3><strong>Image type and Characteristics</strong></h3>
+						</header>
+						
+						<header>
+							<h4><strong>Cell</strong></h4>
+						</header>
+						
+						<p> Hot spot occurring with square geometry in single cell.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/5/?share_key=xXz8BrD3BYrMyZP2nCQq9G" target="_blank" title="image_Cell" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/5.png?share_key=xXz8BrD3BYrMyZP2nCQq9G" alt="image_Cell" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:5" sharekey-plotly="xXz8BrD3BYrMyZP2nCQq9G" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/29/?share_key=hSaQDC6XSSRvNfIzbKSiLd" target="_blank" title="histogram_Cell" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/29.png?share_key=hSaQDC6XSSRvNfIzbKSiLd" alt="histogram_Cell" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:29" sharekey-plotly="hSaQDC6XSSRvNfIzbKSiLd" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Cell-Multi</strong></h4>
+						</header>
+						
+						<p> Hot spots occurring with square geometry in multiple cells.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/23/?share_key=P3bgCFmowlRAPUfUi7ywK3" target="_blank" title="image_Cell-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/23.png?share_key=P3bgCFmowlRAPUfUi7ywK3" alt="image_Cell-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:23" sharekey-plotly="P3bgCFmowlRAPUfUi7ywK3" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/47/?share_key=LjxfzIoOrIlGoBj9uzndZO" target="_blank" title="histogram_Cell-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/47.png?share_key=LjxfzIoOrIlGoBj9uzndZO" alt="histogram_Cell-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:47" sharekey-plotly="LjxfzIoOrIlGoBj9uzndZO" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Cracking</strong></h4>
+						</header>
+						
+						<p>Module anomaly caused by cracking on module surface.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/17/?share_key=04vnrKX99LmvztpWxyxPRY" target="_blank" title="image_Cracking" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/17.png?share_key=04vnrKX99LmvztpWxyxPRY" alt="image_Cracking" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:17" sharekey-plotly="04vnrKX99LmvztpWxyxPRY" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/41/?share_key=P3eAW7VhgE1mrXLEvJo2Um" target="_blank" title="histogram_Cracking" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/41.png?share_key=P3eAW7VhgE1mrXLEvJo2Um" alt="histogram_Cracking" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:41" sharekey-plotly="P3eAW7VhgE1mrXLEvJo2Um" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Hot-Spot</strong></h4>
+						</header>
+						
+						<p> Hot spot on a thin film module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/7/?share_key=oJxXXV2CDENO1fJ8lrJSEb" target="_blank" title="image_Hot-Spot" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/7.png?share_key=oJxXXV2CDENO1fJ8lrJSEb" alt="image_Hot-Spot" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:7" sharekey-plotly="oJxXXV2CDENO1fJ8lrJSEb" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/31/?share_key=GXNa1DfROYiuJKuzg92sDn" target="_blank" title="histogram_Hot-Spot" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/31.png?share_key=GXNa1DfROYiuJKuzg92sDn" alt="histogram_Hot-Spot" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:31" sharekey-plotly="GXNa1DfROYiuJKuzg92sDn" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Hot-Spot-Multi</strong></h4>
+						</header>
+						
+						<p> Multiple hot spots on a thin film module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/25/?share_key=UtqGy1XRYyab37KDhl9Tjk" target="_blank" title="image_Hot-Spot-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/25.png?share_key=UtqGy1XRYyab37KDhl9Tjk" alt="image_Hot-Spot-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:25" sharekey-plotly="UtqGy1XRYyab37KDhl9Tjk" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/49/?share_key=FyIQkBCZaq4KAeLcFzCtu2" target="_blank" title="histogram_Hot-Spot-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/49.png?share_key=FyIQkBCZaq4KAeLcFzCtu2" alt="histogram_Hot-Spot-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:49" sharekey-plotly="FyIQkBCZaq4KAeLcFzCtu2" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Shadowing</strong></h4>
+						</header>
+						
+						<p> Sunlight obstructed by vegetation, man-made structures, or adjacent rows.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/15/?share_key=78W0GOK4TjfZJYxJDf622E" target="_blank" title="image_Shadowing" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/15.png?share_key=78W0GOK4TjfZJYxJDf622E" alt="image_Shadowing" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:15" sharekey-plotly="78W0GOK4TjfZJYxJDf622E" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/39/?share_key=oUpLzWm2aoGsfBt3pTtEbZ" target="_blank" title="histogram_Shadowing" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/39.png?share_key=oUpLzWm2aoGsfBt3pTtEbZ" alt="histogram_Shadowing" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:39" sharekey-plotly="oUpLzWm2aoGsfBt3pTtEbZ" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Diode</strong></h4>
+						</header>
+						
+						<p> Activated bypass diode, typically 1/3 of module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/13/?share_key=VHrFeY9b09aN35MBLcD1Wu" target="_blank" title="image_Diode" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/13.png?share_key=VHrFeY9b09aN35MBLcD1Wu" alt="image_Diode" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:13" sharekey-plotly="VHrFeY9b09aN35MBLcD1Wu" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/37/?share_key=5PrwwRQeqYd7SGRp9eZGXP" target="_blank" title="histogram_Diode" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/37.png?share_key=5PrwwRQeqYd7SGRp9eZGXP" alt="histogram_Diode" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:37" sharekey-plotly="5PrwwRQeqYd7SGRp9eZGXP" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Diode-Multi</strong></h4>
+						</header>
+						
+						<p> Multiple activated bypass diodes, typically affecting 2/3 of module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/19/?share_key=nGIZVjkKXv5OjEZuOOj52i" target="_blank" title="image_Diode-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/19.png?share_key=nGIZVjkKXv5OjEZuOOj52i" alt="image_Diode-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:19" sharekey-plotly="nGIZVjkKXv5OjEZuOOj52i" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/43/?share_key=IbxCEtUDmfwZ1JtS9q7Xw2" target="_blank" title="histogram_Diode-Multi" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/43.png?share_key=IbxCEtUDmfwZ1JtS9q7Xw2" alt="histogram_Diode-Multi" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:43" sharekey-plotly="IbxCEtUDmfwZ1JtS9q7Xw2" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Vegetation</strong></h4>
+						</header>
+						
+						<p> Panels blocked by vegetation.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/11/?share_key=IaixFYDvQvRD5hvFUQUnWD" target="_blank" title="image_Vegetation" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/11.png?share_key=IaixFYDvQvRD5hvFUQUnWD" alt="image_Vegetation" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:11" sharekey-plotly="IaixFYDvQvRD5hvFUQUnWD" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/35/?share_key=2QUocyJhhIl6T2xZjqKRxM" target="_blank" title="histogram_Vegetation" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/35.png?share_key=2QUocyJhhIl6T2xZjqKRxM" alt="histogram_Vegetation" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:35" sharekey-plotly="2QUocyJhhIl6T2xZjqKRxM" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Soiling</strong></h4>
+						</header>
+						
+						<p> Dirt, dust, or other debris on surface of module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/21/?share_key=6u5rVHBdSpkiiZgd7DuW7T" target="_blank" title="image_Soiling" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/21.png?share_key=6u5rVHBdSpkiiZgd7DuW7T" alt="image_Soiling" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:21" sharekey-plotly="6u5rVHBdSpkiiZgd7DuW7T" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/45/?share_key=HbLJcstTUHNMBCkX7mRjDt" target="_blank" title="histogram_Soiling" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/45.png?share_key=HbLJcstTUHNMBCkX7mRjDt" alt="histogram_Soiling" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:45" sharekey-plotly="HbLJcstTUHNMBCkX7mRjDt" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>Offline-Module</strong></h4>
+						</header>
+						
+						<p> Entire module is heated.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/9/?share_key=dj3iRg4TQc1TxNyarol8ZX" target="_blank" title="image_Offline-Module" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/9.png?share_key=dj3iRg4TQc1TxNyarol8ZX" alt="image_Offline-Module" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:9" sharekey-plotly="dj3iRg4TQc1TxNyarol8ZX" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/33/?share_key=42mc2xQUsdKWHHBIzPE7cZ" target="_blank" title="histogram_Offline-Module" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/33.png?share_key=42mc2xQUsdKWHHBIzPE7cZ" alt="histogram_Offline-Module" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:33" sharekey-plotly="42mc2xQUsdKWHHBIzPE7cZ" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<header>
+							<h4><strong>No-Anomaly</strong></h4>
+						</header>
+						
+						<p>Nominal solar module.</p>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/3/?share_key=LIviGfEEsd7agRt5k4PNGK" target="_blank" title="image_No-Anomaly" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/3.png?share_key=LIviGfEEsd7agRt5k4PNGK" alt="image_No-Anomaly" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:3" sharekey-plotly="LIviGfEEsd7agRt5k4PNGK" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						<div>
+							<a href="https://plotly.com/~rohitmishra/27/?share_key=85sjOtOAi5VBaOmYHbMs2q" target="_blank" title="histogram_No-Anomaly" style="display: block; text-align: center;"><img src="https://plotly.com/~rohitmishra/27.png?share_key=85sjOtOAi5VBaOmYHbMs2q" alt="histogram_No-Anomaly" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+							<script data-plotly="rohitmishra:27" sharekey-plotly="85sjOtOAi5VBaOmYHbMs2q" src="https://plotly.com/embed.js" async></script>
+						</div>
+						
+						
+						<header>
+							<h3><strong>Key Points</strong></h3>
+						</header>
+						
+						<li>All images have the same size- 40 pixel by 24 pixel</li>
+						<p> </p>
+						<header>
+							<h3><strong>Challenges</strong></h3>
+						</header>
+						
+						<li>Image size is very small thereby possessing challenge towards resizing- 40 pixel by 24 pixel</li>
+
+
+
+
+
+
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						
+					<div class="copyright">
+						Disclaimer: This web application is using industrious template from <a href ="https://templated.co/">templated.co</a>. Images are used from <a href="https://www.pexels.com/search/solar%20panel/">Pexels</a>. In case of any concern please mail us at <a href="mailto:rohitmishra.ee2009032@gmail.com">contact</a>. 
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
