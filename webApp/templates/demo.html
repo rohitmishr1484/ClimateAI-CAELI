@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Demo</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/images/fevicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/images/fevicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/images/fevicon/favicon-16x16.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="{{url_for('index_html')}}"><img src="../static/images/logo.png" width="50" height="45"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="{{url_for('index_html')}}">Home</a></li>
+					<li><a href="{{url_for('about_html')}}">About</a></li>
+					<li><a href="{{url_for('usecase_html')}}">Usecase</a></li>
+					<li><a href="{{url_for('eda_html')}}">EDA</a></li>
+					<li><a href="{{url_for('demo_html')}}">Demo</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading">
+				<h1>Image classifier</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h3><strong>Upload New Image</strong></h3>
+						</header>
+						
+						<form method=post enctype=multipart/form-data>
+						<input type=file name=image>
+						<input type=submit value=Predict>
+						<br>
+						<h4><strong>Prediction:</strong> {{_prediction}}</h4>
+						<h4><strong>Probability:</strong> {{_prediction_prob}}</h4>
+						</form>
+						
+						<header>
+							<h4><strong>Note from image classifier-</strong></h4>
+						</header>
+						<p>"I am learning and improving every day. In case I miss-classify your image don't worry, together we will get there!!!" </p>
+					
+
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						
+					<div class="copyright">
+						Disclaimer: This web application is using industrious template from <a href ="https://templated.co/">templated.co</a>. Images are used from <a href="https://www.pexels.com/search/solar%20panel/">Pexels</a>. In case of any concern please mail us at <a href="mailto:rohitmishra.ee2009032@gmail.com">contact</a>. 
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -21,4 +21,17 @@ https://github.com/RaptorMaps/InfraredSolarModules
 
 5. project-planning: Project Planning and Version Control workflow management.
 
- 
+## Hardware detail:
+
+This project is developed on Windows 10 operating system without any GPU.
+
+## Setup:
+### Step 1: Create virtual environment
+
+```
+conda create -n hiveProject python=3.6
+conda activate hiveProject
+```
+### Step 2: Install required library from requirement.txt file.
+
+  
