@@ -15,23 +15,40 @@ https://github.com/RaptorMaps/InfraredSolarModules
 
 2. prediction: It contains code for predicting the class given a new image.
 
-3. webApp: Code for web application.
+3. static: style sheet, images and model metadeta for web application.
 
-4. image: contains any image used either in readme or webapplication.
+4. templates: HTML for web application.
 
-5. project-planning: Project Planning and Version Control workflow management.
+5. image: contains any image used either in readme 
+
+6. project-planning: Project Planning and Version Control workflow management.
 
 ## Hardware detail:
 
 This project is developed on Windows 10 operating system without any GPU.
 
 ## Setup:
+
 ### Step 1: Create virtual environment
 
 ```
 conda create -n hiveProject python=3.6
 conda activate hiveProject
 ```
-### Step 2: Install required library from requirement.txt file.
+### Step 2: Install required library to the virtual environment from requirements.txt file.
+
+### Step 3: Train model using CNN notebook in modelTraining folder.
+
+### Step 4: Save the model and other encoding parameters in static/model-metadeta folder for the web application to pick it.
+
+### Step 5: Run app.py to check the application functionality in development.
+
+```
+python app.py
+```
+
+### Step 6: Create a new app in heroku and push the code to heroku master  
+
+
 
   
