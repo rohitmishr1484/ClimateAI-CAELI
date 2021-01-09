@@ -16,11 +16,7 @@ MODEL_META = './static/model_meta'
 
 def read_image(img_path = None):
     
-    relative_image_path = pjoin(IMAGE_PATH, img_path)
-
-    print(relative_image_path) 
-    
-    img = Image.open(relative_image_path)
+    img = Image.open(img_path)
     
     if img.size != (24,40):
         raise ValueError("{} image needs resizing".format(img_path))
