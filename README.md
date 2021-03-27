@@ -1,5 +1,5 @@
 # ClimateAI-CAELI 
-Hive project as part of Applied AI Essentials
+MVP
 
 ## Problem Statement: 
 
